@@ -77,6 +77,7 @@ export default function App() {
                   onChange={() => toggleTodo(todo.id)}
                 />
                 <Text
+                 maxW='90%'
                   data-testid={`todo-text-${todo.text}`}
                   textDecoration={todo.completed ? "line-through" : "none"}
                   color={todo.completed ? "gray.400" : "gray.800"}
